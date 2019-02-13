@@ -13,7 +13,7 @@
 
 One thing that I want to highlight is the separation of SQL with the underlying system that stores the data. Shown below is a stock image of an "accountant".
 
-
+![Data Query](https://raw.githubusercontent.com/amangup/data-analysis-bootcamp/master/02-SQL_Basics/data_query.jpg)
 
 - The paper containing numbers represents the data system.
 - The person represents the SQL coder.
@@ -26,6 +26,8 @@ One thing that I want to highlight is the separation of SQL with the underlying 
 # Describing data
 
 Whenever we get some _table_ of data, our first goal is to _understand_ the contents of that table. In this tutorial, we are using some data which contains the ranking of top songs in the years 2016-2018. The following `.sql` file can be used to create a table and insert the data in a SQL database. The table called `top_songs` is created.
+
+[SQL file to create data](https://github.com/amangup/data-analysis-bootcamp/blob/master/02-SQL_Basics/top_songs.sql)
 
 ## Snapshot of the table
 A snapshot of a table is the list of columns with a few sample rows that serve as examples of what those columns can contain. Here is the query for that:
