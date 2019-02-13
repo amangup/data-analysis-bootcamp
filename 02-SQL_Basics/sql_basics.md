@@ -142,7 +142,7 @@ we get:
 Note the column names in the output don't tells us which column's count it is. We can write the query instead as follows:
 
 ```SQL
-SELECT count(id) as count_id, count(uk) count_uk FROM top_songs;
+SELECT count(id) as count_id, count(uk) as count_uk FROM top_songs;
 ```
 
 and we get:
