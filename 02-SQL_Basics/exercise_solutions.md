@@ -18,11 +18,7 @@ SELECT source_type, count(source_type) FROM public.av_survey GROUP BY source_typ
 #####How many survey responses were collected on each day in the duration of the survey?
 
 ```SQL
-SELECT DISTINCT (date_trunc('day', end_date)) AS survey_days, COUNT(end_date) AS surveys_collected  
-FROM public.av_survey 
-WHERE status = 'COMPLETE' 
-GROUP BY date_trunc('day', end_date) 
-ORDER BY survey_days DESC;
+SELECT distinct(date(start_date)), count(*) From public.av_survey GROUP BY date(start_date);
 ```
 
 
