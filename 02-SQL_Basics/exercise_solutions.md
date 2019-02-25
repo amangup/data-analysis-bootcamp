@@ -1,5 +1,5 @@
 ### Problem 1
-#####How many survey responses are in the table?
+##### How many survey responses are in the table?
 
 ```SQL
 SELECT count(*) FROM public.av_survey WHERE status = 'COMPLETE';
@@ -7,7 +7,7 @@ SELECT count(*) FROM public.av_survey WHERE status = 'COMPLETE';
 
 
 ### Problem 2
-#####How many survey responses were gotten online vs in-person?
+##### How many survey responses were gotten online vs in-person?
 
 ```SQL
 SELECT source_type, count(source_type) FROM public.av_survey GROUP BY source_type;
@@ -15,7 +15,7 @@ SELECT source_type, count(source_type) FROM public.av_survey GROUP BY source_typ
 
 
 ### Problem 3
-#####How many survey responses were collected on each day in the duration of the survey?
+##### How many survey responses were collected on each day in the duration of the survey?
 
 ```SQL
 SELECT distinct(date(start_date)), count(*) From public.av_survey GROUP BY date(start_date);
@@ -23,7 +23,7 @@ SELECT distinct(date(start_date)), count(*) From public.av_survey GROUP BY date(
 
 
 ### Problem 4
-#####What is the average time taken to complete the survey?
+##### What is the average time taken to complete the survey?
 
 If we take a simple average of completed surveys we can use the following:
 
@@ -47,7 +47,7 @@ This returns an average time of 6 minutes and 29 seconds.
 
 
 ### Problem 5
-#####How many distinct zip codes were included in the survey?
+##### How many distinct zip codes were included in the survey?
 
 ```SQL
 SELECT count(distinct(zipcode)) FROM public.av_survey WHERE zipcode <> 0;
@@ -55,14 +55,14 @@ SELECT count(distinct(zipcode)) FROM public.av_survey WHERE zipcode <> 0;
 
 
 ### Problem 6
-#####How many people in total have interacted with an Autonomous Vehicle?
+##### How many people in total have interacted with an Autonomous Vehicle?
 
 ```SQL
 SELECT count(*) FROM public.av_survey WHERE interactbicycle = 'Yes' OR interactpedestrian = 'Yes';
 ```
 
 ### Problem 7
-#####For each type of response to `FeelingsProvingGround`, count how many people gave that response?
+##### For each type of response to `FeelingsProvingGround`, count how many people gave that response?
 
 ```SQL
 SELECT feelingsprovingground, count(feelingsprovingground) 
@@ -73,7 +73,7 @@ GROUP BY feelingsprovingground;
 
 
 ### Problem 8
-#####Same question as Q7, but only from people who have interacted with an Autonomous Vehicle.
+##### Same question as Q7, but only from people who have interacted with an Autonomous Vehicle.
 
 ```SQL
 SELECT feelingsprovingground, count(feelingsprovingground) FROM public.av_survey WHERE interactbicycle = 'Yes' OR interactpedestrian = 'Yes' GROUP BY feelingsprovingground;
@@ -81,7 +81,7 @@ SELECT feelingsprovingground, count(feelingsprovingground) FROM public.av_survey
 
 
 ### Problem 9
-#####For each type of response to `AVSafetyPotential`, count how many people gave that response?
+##### For each type of response to `AVSafetyPotential`, count how many people gave that response?
 
 ```SQL
 SELECT avsafetypotential, count(avsafetypotential) FROM public.av_survey WHERE avsafetypotential IS NOT NULL GROUP BY avsafetypotential ORDER BY count(avsafetypotential) DESC;
@@ -89,7 +89,7 @@ SELECT avsafetypotential, count(avsafetypotential) FROM public.av_survey WHERE a
 
 
 ### Problem 10
-#####Same question as Q9, but only from people who are **Mostly familiar** or **Extremely familiar** with the AV technology (`FamiliarityTechnology` column)
+##### Same question as Q9, but only from people who are **Mostly familiar** or **Extremely familiar** with the AV technology (`FamiliarityTechnology` column)
 
 ```SQL
 SELECT avsafetypotential, count(avsafetypotential) FROM public.av_survey WHERE familiaritytechnology = 'Extremely familiar' OR familiaritytechnology = 'Mostly familiar' GROUP BY avsafetypotential;
@@ -97,7 +97,7 @@ SELECT avsafetypotential, count(avsafetypotential) FROM public.av_survey WHERE f
 
 
 ### Problem 11
-#####How many people are in favor of any type of regulation on Autonomous Vehicles?
+##### How many people are in favor of any type of regulation on Autonomous Vehicles?
 
 ```SQL
 SELECT COUNT(*) FROM public.av_survey WHERE 'Yes' IN (regulationsharedata, regulationschoolzone, regulationspeed, regulationtesting);
@@ -105,7 +105,7 @@ SELECT COUNT(*) FROM public.av_survey WHERE 'Yes' IN (regulationsharedata, regul
 
 
 ### Problem 12
-#####How many people who are following AVs in the news (`PayingAttentionAV` response is **To a moderate extent** or **To a large extent**) are not familiar with the Technology (`FamiliarityTechnology` is _lesser_ than **Somewhat familiar** and _below_)?
+##### How many people who are following AVs in the news (`PayingAttentionAV` response is **To a moderate extent** or **To a large extent**) are not familiar with the Technology (`FamiliarityTechnology` is _lesser_ than **Somewhat familiar** and _below_)?
 
 ```SQL
 SELECT COUNT(payingattentionav) FROM public.av_survey 
