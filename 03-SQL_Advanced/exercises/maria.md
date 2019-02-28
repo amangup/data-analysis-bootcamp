@@ -29,11 +29,8 @@ JOIN public.drug_overdose as d ON d.year = m.year
 GROUP BY d.year
 ```
 
-4. While looking at the data in `mortality` table, it seems that death numbers are generally increasing over time. We want to know if there are some states where this is not true. 
-```SQL
-SELECT state,year, sum(all_causes) FROM public.mortality GROUP BY state, year ORDER BY state,year
-```
-5. Find all states where the year in which maximum deaths occurred is not 2016.
+4. While looking at the data in `mortality` table, it seems that death numbers are generally increasing over time. We want to know if there are some states where this is not true. Find all states where the year in which maximum deaths occurred is not 2016.
+
 ```SQL
 SELECT md.state, md.year,md.all_causes
 FROM public.mortality md
