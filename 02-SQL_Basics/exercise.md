@@ -2,7 +2,10 @@
 
 In Pittsburgh, Autonomous Vehicle (AV) companies have been testing autonomous vehicles since September 2016. However, the tech is new, and there have been some high-profile behavior that we believe warrants a larger conversation. So in early 2017, we set out to design a survey to see both how BikePGH donor-members, and Pittsburgh residents at large, feel about about sharing the road with AVs as a bicyclist and/or as a pedestrian. Our survey asked participants how they feel about being a fellow road user with AVs, either walking or biking. We also wanted to collect stories about people’s experiences interacting with this nascent technology. We are unaware of any public surveys about people’s feelings or understanding of this new technology. We hope that our results will help add to the body of data and help the public and politicians understand the complexity of possible futures that different economic models AV technology can bring to our cities and towncenters. We conducted our survey in two parts. First, we launched the survey exclusively to donor-members, yielding 321 responses (out of 2,900) via email. Once we closed the survey, we launched it again, but allowed the general public to take it. Through promoting it on our website, social media channels, and a few news articles, we yielded 798 responses (mostly from people in the Pittsburgh region), for a combined total of 1,119 responses.
 
-The data insert SQL can be found here.
+## Data location
+
+- If you're using mode analytics, the table is called `av_survey`.
+- If you're using your own DB, the data insert [SQL can be found here](https://raw.githubusercontent.com/amangup/data-analysis-bootcamp/master/02-SQL_Basics/av_survey_insert.sql).
 
 ## Data Column descriptions
 

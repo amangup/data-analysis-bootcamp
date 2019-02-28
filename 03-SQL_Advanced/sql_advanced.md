@@ -2,8 +2,8 @@
 
 We are looking at some more SQL concepts in this lecture. To introduce some of the concepts, especially joins, we need new datasets. In this case, we are looking at some health data - causes of death in the US, to be precise.
 
-- If you're using Mode Analytics, you should see the tables `drug_overdose` and `mortality`
-- If you're using your own DB, you can use the following sql files to create those tables: drug_overdose.sql and mortality_cause.sql
+- If you're using Mode Analytics, you should see the tables `drug_overdose` and `mortality`.
+- If you're using your own DB, you can use the following sql files to create those tables: [drug_overdose.sql](https://raw.githubusercontent.com/amangup/data-analysis-bootcamp/master/03-SQL_Advanced/drug_overdose.sql) and [mortality_cause.sql](https://raw.githubusercontent.com/amangup/data-analysis-bootcamp/master/03-SQL_Advanced/mortality_cause.sql).
 
 # HAVING
 
@@ -160,10 +160,11 @@ SELECT count(distinct(year)) FROM mortality;
 - These two years are the only two years which are overlapping in the year column of both the tables.
 - In this implicit style of join, you only get those rows where the condition is met in both tables. This type of join is called **Inner Join**, and implicit joins can be thought of as alternate syntax to achieve this type of join.
 
-
 ## Types of Join
 
-We are going to use venn diagrams to represent the types of joins. Each table is represented by a circle, and if the circle is filled, the output will contain rows from that table. The following diagram shows the 4 types of join
+We are going to use venn diagrams to represent the types of joins. Each table is represented by a circle, and if the circle is filled, the output will contain rows from that table. The following diagram shows the 4 types of join.
+
+![Join types](https://raw.githubusercontent.com/amangup/data-analysis-bootcamp/master/03-SQL_Advanced/joins.png)
 
 
 |Join Clause| explanation |
@@ -180,7 +181,6 @@ Let's look at each of these one by one.
 ### INNER JOIN
 
 We have already looked at inner join - so let's look at the same example, but written using the `INNER JOIN` syntax.
-
 
 ```SQL
 SELECT d.state, d.year, d.Number_of_Deaths, m.All_causes*10 FROM drug_overdose AS d INNER JOIN mortality AS m ON m.statecode = d.state AND d.year = m.year ORDER BY d.state;
