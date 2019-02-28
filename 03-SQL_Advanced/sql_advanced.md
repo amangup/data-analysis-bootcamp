@@ -212,7 +212,7 @@ That's it. With those two syntax changes, we are now using the JOIN clause synta
 Let's just change the keyword `INNER` to `LEFT` in the previous query, and look at the output:
 
 ```SQL
-SELECT d.state, d.year, d.Number_of_Deaths, m.All_causes*10 FROM drug_overdose AS d INNER JOIN mortality AS m ON m.statecode = d.state AND d.year = m.year ORDER BY d.state, d.year;
+SELECT d.state, d.year, d.Number_of_Deaths, m.All_causes*10 FROM drug_overdose AS d LEFT JOIN mortality AS m ON m.statecode = d.state AND d.year = m.year ORDER BY d.state, d.year;
 ```
 
 The first few rows of output are:
