@@ -97,7 +97,7 @@ You will need to know this function in PostgreSQL: [string_agg()](https://www.db
 
 2. **Growth**: Find the growth in internet penetration for each region. Growth is defined as the ratio of latest value to the oldest value.
 
-#D: Correlations
+# D: Correlations
 
 The main reason I chose these datasets was to see how these different markers correlate with each other. Does Internet penetration increase with GDP? Are there countries where more people are getting access to internet while drinking water availability is not improving?
 
