@@ -103,8 +103,8 @@ The main reason I chose these datasets was to see how these different markers co
 
 - To quantify correlation, we will use the [Pearson correlation cofficient (wikipedia link)](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient). 
 - This is a value which ranges from -1 to +1 : 
-   - -1 signifies that the series whose correlation is being measured have opposite growth pattern, 
-   - 0 means one is growing independent of each other, and 
+   - -1 signifies that the series whose correlation is being measured have opposite growth patterns, 
+   - 0 means one is growing independent of the other, and 
    - 1 means that their growth is perfectly aligned.
 
 - To calculate the Pearson correlation coefficient. The [list of all aggregate functions](https://www.postgresql.org/docs/10/functions-aggregate.html) includes the descriptions of the `corr()` function in PostgreSQL, which we will use.
