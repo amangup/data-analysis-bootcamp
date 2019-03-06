@@ -66,7 +66,7 @@ FROM
   FROM gdp 
   WHERE region_name != 'Total, all countries or areas'
   GROUP BY region_name
-  HAVING sum(CASE WHEN year = 2016 THEN gdp_per_capita ELSE NULL END) - sum(CASE WHEN year = 1985 THEN gdp_per_capita ELSE NULL END) IS NOT NULL) AS growth_avg
+  HAVING sum(CASE WHEN year = 2016 THEN gdp_per_capita ELSE NULL END)::float/sum(CASE WHEN year = 1985 THEN gdp_per_capita ELSE NULL END) IS NOT NULL) AS growth_avg
 GROUP BY growth_category;
 ```
 
