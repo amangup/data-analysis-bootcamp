@@ -3,7 +3,7 @@
 The data is from set of complaints received from customers. The column names and its contents are self explanatory.
 
 - In Mode Analytics, you can use the table `complaints`.
-- Or you can use the following SQL file to insert data to your DB.
+- Or you can use [this SQL file](https://raw.githubusercontent.com/amangup/data-analysis-bootcamp/master/03-SQL_Advanced/complaints.sql) to insert data to your DB.
 
 
 # Problems
