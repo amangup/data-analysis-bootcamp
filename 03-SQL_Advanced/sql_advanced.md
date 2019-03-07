@@ -313,8 +313,7 @@ We have not really explored this dataset properly. Let's do a few exercises:
 1. Using the `drug_overdose` table, find how much % of the deaths due to drug overdoses are due to Opiods (for the states for which we have this data).
 2. Using the `drug_overdose` table, find in which states can you attribute more than 80% of drug overdose deaths to opioids.
 3. Using both the tables, find if more people died by suicide or by drug overdose in the US in 2015 and 2016.
-4. While looking at the data in `mortality` table, it seems that death numbers are generally increasing over time. We want to know if there are some states where this is not true. 
-  - Find all states where the year in which maximum deaths occurred is not 2016.
+4. While looking at the data in `mortality` table, it seems that death numbers are generally increasing over time. We want to know if there are some states where this is not true. Find all states where the year in which maximum deaths occurred is not 2016.
 
 
 
