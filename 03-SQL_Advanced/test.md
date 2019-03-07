@@ -12,7 +12,7 @@ Write SQL queries for each of your questions. Some questions have more than one 
 
 1. Find the number of days over which this data is collected.
 2. How many distinct issues and sub-issues are there?
-3  For each issue, how many consumers complained about that issue?
+3.  For each issue, how many consumers complained about that issue?
 4. For each issue, sub-issue combination, how many consumers complained about that issue, sub-issue?
 5. Find the answer to the 3 and 4 after filtering the data where we have the `consumer_complaint_narrative`.
 6. Repeat 4, but this time only include (issue, sub-issue) combinations which have more than 100 people complaining.
