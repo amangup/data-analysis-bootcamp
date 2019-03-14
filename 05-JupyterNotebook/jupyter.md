@@ -8,9 +8,8 @@ It's distribution also contains all of the data analysis and data science packag
 
 ## Installing Anaconda
 
-You can download and install [Anaconda Distribution from here] (https://www.anaconda.com/distribution/).
-
-- The install [instructions are here](https://docs.anaconda.com/anaconda/install/):
+- You can download and install [Anaconda Distribution from here](https://www.anaconda.com/distribution/).   
+- The install [instructions are here](https://docs.anaconda.com/anaconda/install/). Follow the instructions for your operating system.
 
 ## Running Jupyter
 
