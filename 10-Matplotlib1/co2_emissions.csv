@@ -1,0 +1,66 @@
+End Use,Sector,CO2 emissions
+Space Heating,Residential,273.50
+Space Cooling,Residential,111.43
+Water Heating,Residential,139.38
+Refrigeration,Residential,51.01
+Cooking,Residential,28.95
+Clothes Dryers,Residential,33.54
+Freezers,Residential,10.83
+Lighting,Residential,72.14
+Clothes Washers,Residential,3.89
+Dishwashers,Residential,13.91
+Televisions and Related Equipment,Residential,40.31
+Computers and Related Equipment,Residential,15.40
+Furnace Fans and Boiler Circulation Pumps,Residential,18.02
+Other Uses,Residential,222.18
+Space Heating,Commercial,131.14
+Space Cooling,Commercial,79.41
+Water Heating,Commercial,45.03
+Ventilation,Commercial,77.69
+Cooking,Commercial,14.88
+Lighting,Commercial,129.11
+Refrigeration,Commercial,51.11
+Office Equipment (PC),Commercial,10.79
+Office Equipment (non-PC),Commercial,33.07
+Other Uses,Commercial,350.20
+Refining,Industrial Manufacturing,253.99
+Food Products,Industrial Manufacturing,95.10
+Paper Products,Industrial Manufacturing,69.71
+Bulk Chemicals,Industrial Manufacturing,255.78
+Glass,Industrial Manufacturing,17.04
+Cement and Lime,Industrial Manufacturing,25.36
+Iron and Steel,Industrial Manufacturing,96.45
+Aluminum,Industrial Manufacturing,44.36
+Fabricated Metal Products,Industrial Manufacturing,32.46
+Machinery,Industrial Manufacturing,18.72
+Computers and Electronics,Industrial Manufacturing,17.33
+Transportation Equipment,Industrial Manufacturing,40.57
+Electrical Equipment,Industrial Manufacturing,9.54
+Wood Products,Industrial Manufacturing,14.11
+Plastics,Industrial Manufacturing,32.28
+Balance of Manufacturing,Industrial Manufacturing,131.47
+Agriculture,Industrial Non-Manufacturing ,80.09
+Construction,Industrial Non-Manufacturing ,71.61
+Mining,Industrial Non-Manufacturing ,108.15
+Light-Duty Vehicles,Transportation,1072.79
+Commercial Light Trucks,Transportation,55.49
+Bus Transportation,Transportation,17.49
+Freight Trucks,Transportation,389.68
+"Rail, Passenger",Transportation,5.31
+"Rail, Freight",Transportation,32.79
+"Shipping, Domestic",Transportation,6.76
+"Shipping, International",Transportation,47.66
+Recreational Boats,Transportation,17.24
+Air,Transportation,172.66
+Military Use,Transportation,46.80
+Lubricants,Transportation,5.08
+Pipeline Fuel,Transportation,48.51
+Biomass,Biogenic Energy Combustion,173.22
+Electric Power Sector,Biogenic Energy Combustion,8.48
+Other Sectors,Biogenic Energy Combustion,164.74
+Biogenic Waste,Biogenic Energy Combustion,24.30
+Biofuels Heat and Coproducts,Biogenic Energy Combustion,75.80
+Ethanol,Biogenic Energy Combustion,79.61
+Biodiesel,Biogenic Energy Combustion,22.61
+Liquids from Biomass,Biogenic Energy Combustion,0.00
+Renewable Diesel and Gasoline,Biogenic Energy Combustion,1.86
