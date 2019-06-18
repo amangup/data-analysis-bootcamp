@@ -1,0 +1,8 @@
+axes.spines.left : False
+axes.spines.right : False
+axes.spines.top : False
+axes.grid : True
+axes.grid.axis : both             
+axes.grid.which : major
+axes.axisbelow : True
+grid.linestyle : --
